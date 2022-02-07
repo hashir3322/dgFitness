@@ -1,0 +1,97 @@
+
+.cards {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: none;
+}
+
+.cards>.header__container {
+    width: 100%;
+    margin-top: 6em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+.cards>.header__container>h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.cards>.header__container>h2>span {
+    color: #FFE400;
+}
+
+.cards>.cards__container {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    background-color: #000000;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    border: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+}
+
+.cards__container>.cards__sec {
+    width: 100%;
+    max-width: 1520px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+    -moz-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width: 980px) {
+    .cards>.header__container>h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cards>.header__container {
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+
+    .cards>.header__container>h2 {
+        font-size: 32px;
+    }
+}

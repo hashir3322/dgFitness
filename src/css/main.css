@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+
+.primary__btn {
+    display: block;
+    background: transparent;
+    padding: 5px 35px;
+    color: #ffe400;
+    font-size: 21px;
+    font-weight: bold;
+    border: 1px solid #ffe400;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    transition: all 250ms ease-out;
+}
+
+.primary__btn:hover,
+.primary__btn:focus {
+    background: #ffe400;
+    color: #000;
+    outline: none;
+}
+
+.primary__btn:active {
+    outline: none;
+}
+
+.secondary__btn {
+    display: block;
+    background: #000;
+    padding: 5px 35px;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    transition: all 250ms ease-out;
+}
+
+.secondary__btn:hover,
+.secondary__btn:focus {
+    background: #ffe400;
+    color: #000;
+    outline: none;
+}
+
+.secondary__btn:active {
+    outline: none;
+}
+
+@media (max-width: 900px) {
+
+    .primary__btn,
+    .secondary__btn {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+}

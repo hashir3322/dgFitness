@@ -1,0 +1,306 @@
+.slider__section {
+    margin: 100px 0;
+    position: relative;
+}
+
+.slider__title {
+    text-align: center;
+    margin-bottom: 85px;
+    text-transform: uppercase;
+}
+
+.slider__title--yellow {
+    color: #FFE400;
+}
+
+.swiper__container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swiper__wrapper {
+    width: 75%;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiper__carousel {
+    overflow: hidden;
+    width: 500%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.swiper__slide {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.slider__section .prev__btn,
+.slider__section .next__btn {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    height: 60px;
+    width: 60px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 30px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.slider__section .next__btn {
+    right: 10.3%;
+    background: url("../../images/Slider/arrow_right.png") center/cover no-repeat;
+}
+
+.slider__section .prev__btn {
+    left: 10.3%;
+    background: url("../../images/Slider/arrow_left.png") center/cover no-repeat;
+}
+
+.next__btn::after,
+.prev__btn::after {
+    content: '';
+    line-height: 0;
+}
+
+.slide .video__container {
+    position: relative;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    height: 700px
+}
+
+.slider__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.slider__video .controls__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffe60041;
+    z-index: 2;
+    overflow: hidden;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.controls__container .thumbnail {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.controls__container .play__btn {
+    width: 74px;
+    height: 74px;
+    border: 8px solid #bfb12d;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #FFE400;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-transition: border 200ms ease-in-out;
+    -o-transition: border 200ms ease-in-out;
+    -moz-transition: border 200ms ease-in-out;
+    transition: border 200ms ease-in-out;
+}
+
+.controls__container .play__btn:hover {
+    border: 8px solid #FFE400;
+}
+
+.play__btn img {
+    width: 30px;
+}
+
+
+.slide .content {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    background: #FFE400;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.content img {
+    width: 200px;
+    margin: 100px 0 0 10%;
+}
+
+.content .testimonial {
+    width: 80%;
+    font-family: Arial;
+    font-size: 23px;
+    margin: 40px auto 0 auto;
+}
+
+.content .author {
+    width: 80%;
+    margin: 20px auto 10px auto;
+    text-align: right;
+}
+
+
+@media(max-width: 990px) {
+    .slider__title {
+        font-size: 42px;
+    }
+
+    .swiper__wrapper {
+        width: 90%;
+    }
+
+    .swiper__slide {
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .slide .video__container {
+        -webkit-flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+
+    .slide .content {
+        -webkit-flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+
+    .content img {
+        width: 150px;
+        margin: 50px 0 0 10%;
+    }
+
+    .slider__section .prev__btn,
+    .slider__section .next__btn {
+        margin: 0;
+        height: 50px;
+        width: 50px;
+    }
+
+    .slider__section .next__btn {
+        right: 2%;
+    }
+
+    .slider__section .prev__btn {
+        left: 2%;
+    }
+}
+
+
+
+
+
+@media(max-width: 690px) {
+    .slider__title {
+        font-size: 32px;
+    }
+
+    .swiper__wrapper {
+        width: 95%;
+    }
+
+    .slider__section .prev__btn,
+    .slider__section .next__btn {
+        height: 30px;
+        width: 30px;
+    }
+
+    .slider__section .next__btn {
+        right: 0.2%;
+    }
+
+    .slider__section .prev__btn {
+        left: 0.2%;
+    }
+
+    .slide .video__container {
+        height: 650px;
+    }
+
+    .content img {
+        width: 100px;
+    }
+}
